@@ -14,3 +14,19 @@ FROM Customers;
 SELECT * 
 FROM Employees
 WHERE Title = 'Sales Representative';
+
+-- Where clause or
+SELECT *
+FROM orders
+WHERE ShipCity = 'Seattle'
+	or ShipCity = 'Anchorage';
+
+-- Sort results
+SELECT * 
+FROM Employees
+WHERE Title = 'Sales Representative'
+ORDER BY LastName DESC;
+
+-- Limit results
+SELECT TOP (5) *
+FROM Customers;
