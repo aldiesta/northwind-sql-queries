@@ -15,9 +15,9 @@ SELECT *
 FROM Employees
 WHERE Title = 'Sales Representative';
 
--- Where clause or
+-- Filter with conditions
 SELECT *
-FROM orders
+FROM Orders
 WHERE ShipCity = 'Seattle'
 	or ShipCity = 'Anchorage';
 
